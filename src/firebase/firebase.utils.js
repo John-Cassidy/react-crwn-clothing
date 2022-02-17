@@ -2,7 +2,6 @@ import 'firebase/compat/firestore';
 import 'firebase/compat/auth';
 
 import firebase from 'firebase/compat/app';
-import { useRef } from 'react';
 
 const config = {
   apiKey: process.env.REACT_APP_FIREBASE_APIKEY,
