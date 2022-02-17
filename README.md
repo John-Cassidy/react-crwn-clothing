@@ -16,3 +16,45 @@ npm i node-sass
 
 [v5 Docs](https://v5.reactrouter.com/web/guides/quick-start)
 npm i react-router-dom@^5.3.0
+
+## Using .env File
+
+[documentation](https://www.pluralsight.com/guides/how-to-store-and-read-configuration-files-using-react)
+
+## Backend with Firebase
+
+use [firebase](https://firebase.google.com/) for:
+
+> Authentication
+> Database
+> other
+
+npm i firebase
+
+[documentation](https://firebase.google.com/docs/reference/js/)
+
+```text
+If you are using a version of firebase that's greater than v8, you will encounter the import error
+
+Attempted import error: 'firebase/app' does not contain a default export (imported as 'firebase').
+
+The same will be true for other firebase imports that we use in this project!
+
+There is an easy fix for this though, firebase includes backward compatibility. All you need to is change your import from firebase/app to firebase/compat/app. The same is true for all our other imports.
+
+So from:
+```
+
+```javascript
+import firebase from 'firebase/app';
+import 'firebase/firestore';
+import 'firebase/auth';
+```
+
+to:
+
+```javascript
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/firestore';
+import 'firebase/compat/auth';
+```
