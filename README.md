@@ -58,3 +58,9 @@ import firebase from 'firebase/compat/app';
 import 'firebase/compat/firestore';
 import 'firebase/compat/auth';
 ```
+
+### Firebase Database - Cloud Firestore
+
+Set up firebase firestore!
+
+> Firebase has added the additional option of realtime database but DON'T use that one! Make sure you select Cloud Firestore
