@@ -64,3 +64,7 @@ import 'firebase/compat/auth';
 Set up firebase firestore!
 
 > Firebase has added the additional option of realtime database but DON'T use that one! Make sure you select Cloud Firestore
+
+## State with Redux
+
+> npm i redux redux-logger
