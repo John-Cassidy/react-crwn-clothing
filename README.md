@@ -10,7 +10,12 @@ npx create-react-app react-crwn-clothing --template cra-template-pwa
 
 ## Additional Packages
 
+package allows you to natively compile .scss files to css
 npm i node-sass
+
+memoization package to stop reduce from running constantly when state changes
+
+> npm i reselect
 
 ### React Router v5
 
