@@ -75,3 +75,7 @@ Set up firebase firestore!
 > npm i redux redux-logger react-redux
 
 ![Redux Flow Diagram](https://user-images.githubusercontent.com/25551945/154748109-17c768f9-117d-4899-9702-2d97ef3a14fa.png)
+
+### Storage with Redux
+
+> npm i redux-persist
