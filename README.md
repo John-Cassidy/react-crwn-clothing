@@ -79,3 +79,7 @@ Set up firebase firestore!
 ### Storage with Redux
 
 > npm i redux-persist
+
+## Checkout with Stripe
+
+> npm i react-stripe-checkout
