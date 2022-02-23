@@ -83,3 +83,7 @@ Set up firebase firestore!
 ## Checkout with Stripe
 
 > npm i react-stripe-checkout
+
+## CSS in JS - styled-components
+
+> npm i styled-components
