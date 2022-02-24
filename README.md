@@ -89,3 +89,17 @@ Set up firebase firestore!
 ## CSS in JS - styled-components
 
 > npm i styled-components
+
+## Async Redux
+
+Use redux-thunk middleware to intercept dispatched actions and introduce workflow to:
+
+> preform additional work like:
+>
+> > get data from database
+> > read from file
+> > dispatch additional actions to reducers
+
+install package
+
+> npm i redux-thunk
