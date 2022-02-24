@@ -28,17 +28,26 @@ class ShopPage extends React.Component {
     const { updateCollections } = this.props;
     const collectionRef = firestore.collection('collections');
 
-    this.unsubscribeFromSnapshot = collectionRef.onSnapshot(async (snaphot) => {
-      const collectionsMap = convertCollectionsSnapshotToMap(snaphot);
+    // ########################################
+    // Live Update Stream Style that Observable Pattern - onSnapshot event will allow us to get new data without remounting
+    // ########################################
+    // this.unsubscribeFromSnapshot = collectionRef.onSnapshot(async (snaphot) => {
+    //   const collectionsMap = convertCollectionsSnapshotToMap(snaphot);
+    //   updateCollections(collectionsMap);
+    //   this.setState({ loading: false });
+    // });
+    // ########################################
+
+    // ########################################
+    // Promise Style Pattern - need to remount to get any new data
+    // One-Off API calls leveraging async event handling to fetch data
+    // ########################################
+    collectionRef.get().then((snapshot) => {
+      const collectionsMap = convertCollectionsSnapshotToMap(snapshot);
       updateCollections(collectionsMap);
       this.setState({ loading: false });
     });
-
-    // collectionRef.get().then((snapshot) => {
-    //   const collectionsMap = convertCollectionsSnapshotToMap(snapshot);
-    //   console.log(collectionsMap);
-    //   updateCollections(collectionsMap);
-    // });
+    // ########################################
   }
 
   render() {
