@@ -22,9 +22,10 @@ export const selectCollectionsForPreview = createSelector(
 );
 
 export const selectCollection = (collectionUrlParam) =>
-  createSelector([selectCollections], (collections) =>
+  createSelector(
+    [selectCollections],
+    (collections) => (collections ? collections[collectionUrlParam] : null)
     //   collections.find(
     //     (collection) => collection.id === COLLECTION_ID_MAP[collectionUrlParam]
     //   )
-    collections ? collections[collectionUrlParam] : null
   );
