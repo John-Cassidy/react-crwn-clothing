@@ -103,3 +103,11 @@ Use redux-thunk middleware to intercept dispatched actions and introduce workflo
 install package
 
 > npm i redux-thunk
+
+## Redux Saga
+
+install package
+
+> npm i redux-saga
+
+remove thunk middleware
