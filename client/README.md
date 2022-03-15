@@ -117,3 +117,7 @@ remove thunk middleware
 ### install axios
 
 npm i axios
+
+## 404 Illustrations
+
+[Link](https://www.kapwing.com/404-illustrations)
